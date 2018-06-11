@@ -1,9 +1,9 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const autoPrefixer = require('gulp-autoprefixer');
 
-gulp.task('sass', function() {
+gulp.task('sass', () => {
     gulp.src('sass/**/*.scss')
         .pipe(sass())
         .pipe(autoPrefixer())
@@ -21,12 +21,7 @@ gulp.task('browserSync', () => {
   })
 });
 
-gulp.task('watch', ['browserSync', 'sass'], () => {
+gulp.task('default', ['browserSync', 'sass'], () => {
   gulp.watch('sass/**/*.scss', ['sass']);
   gulp.watch('index.html', browserSync.reload);
 });
-
-// gulp.task('watch', ['browserSync', 'sass'], () => {
-//   gulp.watch('scss/**/*.sass', ['sass']);
-//   gulp.watch('index.html', browserSync.reload);
-// });
