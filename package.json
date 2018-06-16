@@ -9,6 +9,7 @@
     "watch": "npm run build -- --watch",
     "build:dev": "npm run build -- --env.env=dev",
     "build:watch:dev": "npm run watch --  --env.env=dev",
+    "build:pro": "npm run build -- --env.env=pro",
     "webpack-dev-server": "webpack-dev-server --port=8080 --hot"
   },
   "repository": {
@@ -27,11 +28,11 @@
   "devDependencies": {
     "browser-sync": "^2.24.4",
     "css-loader": "^0.28.11",
-    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-sass": "^4.0.1",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",

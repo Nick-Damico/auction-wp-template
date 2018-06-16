@@ -9,22 +9,14 @@ const config = {
     filename: "bundle.js",
     path: commonPaths.outputPath
   },
-  module: {
-    rules: [
-      {
-        test: /\.(s*)css$/,
-        use: [
-          "style-loader",
-          "css-loader",
-          "sass-loader"
-        ]
-      }
-    ]
-  },
   plugins: [
     new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
-      
+      filename: "index.html",
+      template: commonPaths.srcPath + "/template.html",
+      meta: {
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+      }
     })
   ]
 };
