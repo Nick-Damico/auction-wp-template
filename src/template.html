@@ -5,21 +5,28 @@
     <title>Webpack App</title>
   </head>
   <body>
-    <header class="header">
-      <div class="wrapper">
-        <img class="site-logo" src=<%= require("./images/gavel-logo.svg") %> alt="damico auctions logo" />
-        <span class="logo">
-          <h1>Damico Auctions</h1>
-          <h2 class="subtitle">David D'Amico | Auctioneer</h2>
-        </span>
-        <ul class="nav">
-          <li class="selected">Home</li>
-          <li>Auctions</li>
-          <li>Appraisals</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-    </header>
+    <div class="wrapper">
+      <header class="header">
+        <div class="wrapper__header">
+          <img class="site-logo" src=<%= require("./images/gavel-logo.svg") %> alt="damico auctions logo" />
+          <span class="logo">
+            <h1 class="logo-title">Damico Auctions</h1>
+            <p class="logo-subtitle">David D'Amico | Auctioneer</p>
+          </span>
+          <nav class="nav-container">
+            <div class="nav-button">
+              <span>&#9776;</span>
+            </div>
+            <ul class="nav-list">
+              <li class="selected">Home</li>
+              <li>Auctions</li>
+              <li>Appraisals</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+     </div> <!-- End of wrapper -->
     <%= htmlWebpackPlugin.options.src %>
 </body>
 </html>

@@ -1,0 +1,20 @@
+/*
+  Wrapper containers for Grid Content Areas
+  and Max-width control
+*/
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+/* Wrapper for Header Element on All Pages */
+.wrapper__header {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}

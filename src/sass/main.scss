@@ -3,10 +3,13 @@
 @import "vendor/fonts";
 
 // Import Base/Partial Styles | Normalize | Variables
+@import "partials/variables";
 @import "partials/base";
+
+// Layout
+@import "layout/containers";
+@import "layout/header";
 
 // Import Components
 @import "components/navigation";
-
-// Layout
-@import "layout/header";
+@import "components/logo";
