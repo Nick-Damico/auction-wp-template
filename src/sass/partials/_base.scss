@@ -1,0 +1,37 @@
+body {
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: crimson;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+p, li {
+  line-height: 1.65;
+  list-style: none;
+}
+
+li { list-style: none; }
+h1,
+h2{
+  margin: 0;
+  padding: 0;
+}

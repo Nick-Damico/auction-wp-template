@@ -9,7 +9,7 @@
     "watch": "npm run build -- --watch",
     "build:dev": "npm run build -- --env.env=dev",
     "build:watch:dev": "npm run watch --  --env.env=dev",
-    "build:pro": "npm run build -- --env.env=pro",
+    "build:prod": "npm run build -- --env.env=pro",
     "webpack-dev-server": "webpack-dev-server --port=8080 --hot"
   },
   "repository": {
