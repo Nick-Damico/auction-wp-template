@@ -1,13 +1,12 @@
 // Import Vendor Styles
 @import "vendor/normalize";
+@import "vendor/fonts";
 
 // Import Base/Partial Styles | Normalize | Variables
-@import "base/index";
-@import "base/variables";
+@import "partials/base";
 
 // Import Components
-@import "components/buttons";
-@import "components/header";
+@import "components/navigation";
 
 // Layout
 @import "layout/header";
