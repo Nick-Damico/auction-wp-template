@@ -7,9 +7,10 @@
   <body>
     <header class="header">
       <div class="wrapper">
+        <img class="site-logo" src=<%= require("./images/gavel-logo.svg") %> alt="damico auctions logo" />
         <span class="logo">
-          <h1>Damico <i>Auctions</i></h1>
-        <h2 class="subtitle">David D'Amico | Auctioneer</h2>
+          <h1>Damico Auctions</h1>
+          <h2 class="subtitle">David D'Amico | Auctioneer</h2>
         </span>
         <ul class="nav">
           <li class="selected">Home</li>
@@ -19,6 +20,6 @@
         </ul>
       </div>
     </header>
-    <title><%= htmlWebpackPlugin.options.src %></title>
+    <%= htmlWebpackPlugin.options.src %>
 </body>
 </html>
