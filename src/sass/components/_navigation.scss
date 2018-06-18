@@ -1,6 +1,6 @@
 /* Main Site Navigation in Header Element */
 
-.nav-container {
+.navigation {
   display: grid;
   // grid-column: end;
   @media (min-width: 340px) {
@@ -9,17 +9,39 @@
 }
 
 .nav-list {
-  display: none;
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  background: #507fb9;
+  height: 0;
+  top: 92px;
+  color: white;
+  padding-left: 14px;
+  transition: height .8s ease-out;
 }
 
-.nav-button {
-  border: 1px solid $black;
-  width: 100%;
-  max-width: 50px;
-  padding: 4px;
-  text-align: center;
+[aria-expanded="true"] ~ .nav-list {
+  height: 120px;
 }
 
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $black;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.nav-btn__line {
+  display: block;
+  height: 2px;
+  background: $white;
+  width: 20px;
+}
 
 /* Deprecated Styles */
 
