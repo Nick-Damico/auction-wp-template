@@ -5,6 +5,9 @@
   @media (min-width: 340px) {
     grid-column: end;
   }
+  @media (min-width: 549px) {
+    grid-column: auto;
+  }
 }
 
 .nav-list {
@@ -20,8 +23,17 @@
   transition: height 0.8s ease-out;
 
   @media (min-width: 549px) {
-    position: inherit;
-    height: auto;
+    & {
+      position: initial;
+      height: auto;
+      display: grid;
+      grid-column: end;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    & .nav-items:last-child  {
+      border-right: 1px solid $black;
+    }
   }
 }
 
@@ -30,7 +42,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: $black;
+  background-color: $gold;
+  border-radius: 6px;
   width: 30px;
   height: 30px;
   padding: 5px;
@@ -45,7 +58,7 @@
 .nav-btn__line {
   display: block;
   height: 1px;
-  background: $white;
+  background: $black;
   width: 20px;
   transition: transform .4s;
 }
@@ -55,11 +68,20 @@
   padding: 8px 0 8px 14px;
   background-color: #517FB9;
   color: #FCFCFC;
-  transition: all 0.5s;
+  transition: color 0.5s,
+              background-color 0.5s;
 
   &:hover {
     color: $black;
     background-color: $gold;
+  }
+
+  @media (min-width: 549px) {
+    & {
+      text-align: center;
+      padding: 28px 8px;
+      border-left: 1px solid $black;
+    }
   }
 }
 
