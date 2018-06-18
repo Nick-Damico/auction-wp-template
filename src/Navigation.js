@@ -2,6 +2,7 @@ class Navigation {
   constructor() {
     this.navEl = document.querySelector('#navBtn');
     this.navEl.addEventListener('click', this.toggleNav);
+    window.addEventListener('resize', this.closeNav.bind(this));
   }
 
   toggleNav(evt) {
@@ -11,6 +12,14 @@ class Navigation {
     this.classList.toggle('open');
   }
 
+  closeNav(evt) {
+    const currentWidth = evt.currentTarget.innerWidth;
+    if (currentWidth > 549) {
+      this.navEl.setAttribute('aria-expanded', false);
+      this.navEl.classList.remove('open');
+    }
+  }
+  
 };
 
 module.exports = Navigation;
