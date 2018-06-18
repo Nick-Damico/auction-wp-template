@@ -1,5 +1,4 @@
 /* Main Site Navigation in Header Element */
-
 .navigation {
   display: grid;
   // grid-column: end;
@@ -11,18 +10,19 @@
 .nav-list {
   position: absolute;
   display: block;
-  left: 0;
-  right: 0;
-  background: #507fb9;
   height: 0;
   top: 92px;
+  right: 0;
+  left: 0;
+  background: #507fb9;
   color: white;
-  padding-left: 14px;
-  transition: height .8s ease-out;
-}
+  overflow: hidden;
+  transition: height 0.8s ease-out;
 
-[aria-expanded="true"] ~ .nav-list {
-  height: 120px;
+  @media (min-width: 549px) {
+    position: inherit;
+    height: auto;
+  }
 }
 
 .nav-btn {
@@ -34,17 +34,61 @@
   width: 30px;
   height: 30px;
   padding: 5px;
+
+  @media (min-width: 549px) {
+    & {
+      display: none;
+    }
+  }
 }
 
 .nav-btn__line {
   display: block;
-  height: 2px;
+  height: 1px;
   background: $white;
   width: 20px;
+  transition: transform .4s;
 }
 
-/* Deprecated Styles */
+.nav-links {
+  display: block;
+  padding: 8px 0 8px 14px;
+  background-color: #517FB9;
+  color: #FCFCFC;
+  transition: all 0.5s;
 
+  &:hover {
+    color: $black;
+    background-color: $gold;
+  }
+}
+
+/* Toggle Navigation */
+
+[aria-expanded="true"] ~ .nav-list {
+  height: 168px;
+}
+
+.nav-btn.open {
+  justify-content: center;
+
+  & .nav-btn__line--2 {
+    background-color: transparent;
+  }
+
+  & .nav-btn__line--1 {
+    transform: rotate(45deg);
+    transform-origin: 9px;
+  }
+
+  & .nav-btn__line--3 {
+    transform: rotate(-45deg);
+    transform-origin: 9px;
+  }
+}
+
+
+/* Deprecated Styles */
 // .main__title {
 //   color: blue;
 // }
