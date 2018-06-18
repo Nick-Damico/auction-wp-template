@@ -1,14 +1,15 @@
 class Navigation {
   constructor() {
     this.navEl = document.querySelector('#navBtn');
-    this.navEl.addEventListener('click', evt => this.toggleNav(evt));
+    this.navEl.addEventListener('click', this.toggleNav);
   }
 
   toggleNav(evt) {
-    const expanded = evt.target.getAttribute('aria-expanded') === 'true' || false;
-    evt.target.setAttribute('aria-expanded', !expanded);
+    const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+    this.setAttribute('aria-expanded', !expanded);
+    // Toggle Class to animate hamburger Icon to 'open' and 'close' state.
+    this.classList.toggle('open');
   }
-
 
 };
 
