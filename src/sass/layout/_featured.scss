@@ -1,0 +1,17 @@
+.featured {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 40px 1fr;
+}
+
+.upcoming-banner {
+  display: grid;
+  background-color: $red;
+  color: white;
+  grid-column: 1 / -1;
+  grid-row: span 1;
+}
+
+.upcoming-banner__text {
+  text-align: left;
+}

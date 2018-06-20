@@ -10,11 +10,21 @@
 }
 
 /* Wrapper for Header Element on All Pages */
-.wrapper__header {
+.wrapper-inner {
   display: grid;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-left: 8px;
+}
+
+.wrapper-inner--header {
   grid-gap: 10px;
   grid-template-columns: auto auto 1fr;
   align-items: center;
-  max-width: 960px;
-  margin: 0 auto;
+}
+
+.wrapper-inner--featured {
+  align-content: center;
+  text-align: left;
+  width: 100%;
 }

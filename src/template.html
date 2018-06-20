@@ -2,18 +2,19 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Webpack App</title>
+    <title>D'Amico Auctions & Appraisals, A Leader in Liquadation of New Car Dealerships</title>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="wrapper__header">
+        <div class="wrapper-inner wrapper-inner--header">
           <img class="site-logo" src=<%= require("./images/gavel-logo.svg") %> alt="damico auctions logo" />
           <span class="logo">
             <h1 class="logo-title">Damico Auctions</h1>
             <p class="logo-subtitle">David D'Amico | Auctioneer</p>
           </span>
           <nav class="navigation" role="navigation">
+            <!-- hamburger navigation button -->
             <a href="#" id="navBtn" class="nav-btn" href="#" aria-expanded="false" aria-controls="nav-list">
               <span class="nav-btn__line nav-btn__line--1"></span>
               <span class="nav-btn__line nav-btn__line--2"></span>
@@ -32,7 +33,11 @@
 
     <main class="main">
       <section class="featured">
-        Featured Auctions Here
+        <div class="upcoming-banner">
+          <div class="wrapper-inner wrapper-inner--featured">
+            <p class="upcoming-banner__text">Upcoming Auction</p>
+          </div>
+        </div>
       </section>
     </main>
     <%= htmlWebpackPlugin.options.src %>
