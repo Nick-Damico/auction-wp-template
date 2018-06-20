@@ -24,6 +24,7 @@
 }
 
 .wrapper-inner--featured {
+  grid-template-columns: 32px auto;
   align-content: center;
   text-align: left;
   width: 100%;
