@@ -6,15 +6,14 @@
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  justify-content: center;
 }
 
 /* Wrapper for Header Element on All Pages */
 .wrapper-inner {
   display: grid;
   max-width: $max-width;
-  margin: 0 auto;
   padding-left: 8px;
+  margin: 0 auto;
 }
 
 .wrapper-inner--header {
@@ -25,7 +24,7 @@
 
 .wrapper-inner--featured {
   grid-template-columns: 32px auto;
+  grid-gap: 10px;
   align-content: center;
-  text-align: left;
   width: 100%;
 }

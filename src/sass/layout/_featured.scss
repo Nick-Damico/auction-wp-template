@@ -1,7 +1,8 @@
 .featured {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 40px 1fr;
+  background-color: $blue;
 }
 
 .upcoming-banner {
@@ -16,4 +17,8 @@
   text-align: left;
   display: flex;
   align-self: center;
+}
+
+.featured-carousel {
+  background-color: $blue;
 }

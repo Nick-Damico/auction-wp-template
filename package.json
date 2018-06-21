@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Nick-Damico/auction-wp-template#readme",
   "dependencies": {
+    "flickity": "^2.1.2",
     "gulp": "^3.9.1"
   },
   "devDependencies": {
