@@ -1,41 +1,94 @@
+.carousel {
+  background-color: $blue;
+}
 
-.carousel-cell {
+/* Featured Auction Section of Carousel */
+
+.auction-slide {
   width: 100%;
-  height: 200px;
+  height: 300px;
   margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
+  background: $blue;
+  // border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 70;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba($blue, 0.6);
+  }
+
+  .auction-slide__title {
+    position: relative;
+    z-index: 80;
+    color: $gold;
+    background-color: rgba(#326996, 0.5);
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px 20px;
+  }
+}
+
+.auction-slide__inner {
+  position: relative;
+  z-index: 80;
+  align-self: start;
+  max-width: 80%;
+  margin-left: 1rem;
+
+  @media (min-width: 549px) {
+    & {
+      max-width: 60%;
+      align-self: center;
+    }
+  }
+
+  .auction-slide__heading {
+    color: $white;
+    font-size: 1.8rem;
+    text-shadow: $featured-text-shadow;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .auction-slide__date-time {
+    font-size: 1.4rem;
+    color: $gold;
+    text-shadow: $featured-text-shadow;
+  }
 }
 
 .carousel.is-fullscreen .carousel-cell {
   height: 100%;
 }
 
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
 
-/* no circle */
+
+/* Flickity Buttons */
 .flickity-button {
   background: transparent;
 }
 /* big previous & next buttons */
 .flickity-prev-next-button {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 /* icon color */
 .flickity-button-icon {
-  fill: white;
+  fill: $gold;
 }
 /* hide disabled button */
 .flickity-button:disabled {
   display: none;
+}
+
+.flickity-button:hover {
+  background: rgba($blue, 0.5);
 }

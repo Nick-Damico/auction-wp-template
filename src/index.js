@@ -8,7 +8,7 @@ import Flickity from 'flickity';
 new Navigation();
 
 // Import Vendor Scripts
-var flky = new Flickity( '.carousel', {
+var flky = new Flickity( '#carousel', {
   // options, defaults listed
 
   accessibility: true,
