@@ -3,7 +3,7 @@
     display: inline-block;
     border-radius: 7px;
     box-shadow: inset 0px 0px 1px $white;
-    margin: 50px 0 0 50px;
+    // margin: 50px 0 0 50px;
     color: $white;
     transition: background-color 0.5s;
 }
@@ -49,4 +49,11 @@
   &:active {
     background-color: lighten($red, 10%);
   }
+}
+
+/* Special Button Classes */
+.btn__details {
+  text-align: center;
+  max-width: 84px;
+  align-self: center;
 }
