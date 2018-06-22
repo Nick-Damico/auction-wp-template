@@ -1,9 +1,9 @@
 .carousel {
   background-color: $blue;
+  grid-column: 1 / -1;
 }
 
 /* Featured Auction Section of Carousel */
-
 .auction-slide {
   width: 100%;
   height: 300px;

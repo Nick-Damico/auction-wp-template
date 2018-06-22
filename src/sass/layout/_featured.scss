@@ -5,7 +5,7 @@
   background-color: $blue;
 }
 
-.upcoming-banner {
+.featured-banner {
   display: grid;
   background-color: $red;
   color: white;
@@ -13,12 +13,8 @@
   grid-row: span 1;
 }
 
-.upcoming-banner__text {
+.featured-banner__text {
   text-align: left;
   display: flex;
   align-self: center;
-}
-
-.featured-carousel {
-  background-color: $blue;
 }
