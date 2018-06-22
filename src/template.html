@@ -39,6 +39,8 @@
             <p class="featured-banner__text">Upcoming Auction</p>
           </div>
         </div> <!-- end of .upcoming-banner -->
+
+        <!-- Start of Flickity Carousel -->
         <div id="carousel" class="carousel">
           <div class="auction-slide" style="background: url('../images/dealership-test.png') no-repeat center;background-size: cover;">
             <h3 class="auction-slide__title">Live On-Site Auction</h3>
@@ -64,10 +66,21 @@
             </div>
           </div>
 
-        </div>
+        </div> <!-- End of .carousel Flickity -->
+      </section> <!-- end of section .featured -->
 
+      <section id="auctionCalender" class="auction-calender">
+        <a href="#" class="btn btn-sml btn--primary">Details</a>
+        <a href="#" class="btn btn-med btn--primary">Details</a>
+
+        <hr>
+        <a href="#" class="btn btn-sml btn--secondary">Details</a>
+        <a href="#" class="btn btn-med btn--secondary">Details</a>
+        <hr>
+        <a href="#" class="btn btn-sml btn--warning">Details</a>
+        <a href="#" class="btn btn-med btn--warning">Details</a>
+        <hr>
       </section>
-
     </main>
     <%= htmlWebpackPlugin.options.src %>
 </body>

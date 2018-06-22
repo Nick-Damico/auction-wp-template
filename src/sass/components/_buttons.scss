@@ -1,0 +1,52 @@
+// Button Base Styles
+.btn {
+    display: inline-block;
+    border-radius: 7px;
+    box-shadow: inset 0px 0px 1px $white;
+    margin: 50px 0 0 50px;
+    color: $white;
+    transition: background-color 0.5s;
+}
+
+// Button Sizes
+.btn-sml {
+  padding: 12px 20px;
+}
+
+.btn-med {
+  padding: 18px 30px;
+  font-size: 1.4rem;
+}
+
+// Button Types
+.btn--primary {
+  background-color: $blue;
+  border-bottom: 3px solid darken($blue, 20%);
+
+  &:hover,
+  &:active {
+    background-color: lighten($blue, 10%);
+  }
+}
+
+.btn--secondary {
+  background-color: $gold;
+  color: $blue;
+  border-bottom: 3px solid darken($gold, 20%);
+
+  &:hover,
+  &:active {
+    background-color: lighten($gold, 10%);
+  }
+}
+
+.btn--warning {
+  background-color: $red;
+  color: $white;
+  border-bottom: 3px solid darken($red, 20%);
+
+  &:hover,
+  &:active {
+    background-color: lighten($red, 10%);
+  }
+}
