@@ -21,6 +21,7 @@
   background: #507fb9;
   color: white;
   overflow: hidden;
+  z-index: 100;
   transition: height 0.8s ease-out;
 
   @media (min-width: 549px) {
