@@ -69,8 +69,6 @@
   height: 100%;
 }
 
-
-
 /* Flickity Buttons */
 .flickity-button {
   background: transparent;
@@ -91,4 +89,19 @@
 
 .flickity-button:hover {
   background: rgba($blue, 0.5);
+}
+
+/* Flickity Dots bottom of Carousel */
+.flickity-page-dots {
+  bottom: 4px;
+  // background-color: rgba($blue, 0.5);
+
+  & .dot.is-selected {
+    background-color: $gold;
+  }
+  & .dot {
+    background: $black;
+    opacity: 0.8;
+
+  }
 }
