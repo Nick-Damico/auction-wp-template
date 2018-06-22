@@ -112,6 +112,12 @@
         font-size: 1.4rem;
       }
     }
+
+    @media (min-width: $med-screen) {
+      & {
+        font-size: 1.6rem;
+      }
+    }
   }
 }
 
