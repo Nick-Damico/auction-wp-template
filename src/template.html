@@ -64,7 +64,7 @@
               <p class="auction-slide__date-time">
                 May 09, 2018. at 2pm EST.
               </p>
-              <a href="#" class="btn__details btn btn-sml btn--primary btn__deatils">Details</a>
+              <a href="#" class="btn__details btn btn-sml btn--primary ">Details</a>
             </div>
           </div>
 
@@ -72,16 +72,86 @@
       </section> <!-- end of section .featured -->
 
       <section id="auctionCalender" class="auction-calender">
-        <a href="#" class="btn btn-sml btn--primary">Details</a>
-        <a href="#" class="btn btn-med btn--primary">Details</a>
+        <div class="wrapper-inner">
+          <h2 class="auction-calender__heading">Auction Calender</h2>
+        </div>
+        <div class="wrapper-inner wrapper-inner__auction-calender">
+          <div class="auction-calender__container">
 
-        <hr>
-        <a href="#" class="btn btn-sml btn--secondary">Details</a>
-        <a href="#" class="btn btn-med btn--secondary">Details</a>
-        <hr>
-        <a href="#" class="btn btn-sml btn--warning">Details</a>
-        <a href="#" class="btn btn-med btn--warning">Details</a>
-        <hr>
+            <article class="auction-card">
+              <h2 class="auction-card__title">
+                  AUTOMOTIVE REPAIR EQUIPMENT. A & W Complete Automotive Care. FLORENCE, KENTUCKY
+              </h2>
+              <a class="auction-card__date auction-card__date--sold" href="#">
+                <span class="auction-card__date__month">May</span>
+                <span class="auction-card__date__day">09</span>
+              </a>
+              <div class="auction-card__body">
+                <div class="auction-card__col1">
+                  <img src=<%= require("./images/align-rack@3x.jpg") %> class="auction-card__image">
+                  <div class="auction-card__btn-container">
+                    <a href="#" class="btn__details btn btn-sml btn--primary">Details</a>
+                    <a href="#" class="btn__bid btn btn-sml btn--primary">Bid Online</a>
+                  </div>
+                </div>
+                <div class="auction-card__col2">
+                  <div class="auction-card__upcoming-auction">
+                    <h3 class="auction-card__heading">Auction Summary</h3>
+                    <p class="auction-card__text">
+                      Featuring (13) Thomas - Freightliner School Buses including
+                      (8) 2007 & 2006 Newer Body Style w/ Mercedes Engines / Jeeps /
+                      Chevy Blazer / Ford E-350 Vans / JD Tractor-Loader /Mowers
+                      / Sprayers / CheTech / ClubCar / Hobart Mixers / Warehouse is Full!
+                    </p>
+                  </div>
+                  <div class="auction-card__details-auction">
+                    <h3 class="auction-card__heading">Live On-Site</h3>
+                    <p class="auction-card__text"><span class="text-important">Inspection: </span>May 09, 2017 from 9am to 10pm</p>
+                    <p class="auction-card__text"><span class="text-important">Auction: </span>May 09, 2017 from 9am to 10pm</p>
+                    <p class="auction-card__text"><span class="text-important">Location: </span>May 09, 2017 from 9am to 10pm</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="auction-card">
+              <h2 class="auction-card__title">
+                  AUTOMOTIVE REPAIR EQUIPMENT. A & W Complete Automotive Care. FLORENCE, KENTUCKY
+              </h2>
+              <a class="auction-card__date" href="#">
+                <span class="auction-card__date__month">July</span>
+                <span class="auction-card__date__day">04</span>
+              </a>
+              <div class="auction-card__body">
+                <div class="auction-card__col1">
+                  <img src=<%= require("./images/align-rack@3x.jpg") %> class="auction-card__image">
+                  <div class="auction-card__btn-container">
+                    <a href="#" class="btn__details btn btn-sml btn--primary">Details</a>
+                    <a href="#" class="btn__bid btn btn-sml btn--primary">Bid Online</a>
+                  </div>
+                </div>
+                <div class="auction-card__col2">
+                  <div class="auction-card__upcoming-auction">
+                    <h3 class="auction-card__heading">Auction Summary</h3>
+                    <p class="upcoming-auction__details">
+                      Featuring (13) Thomas - Freightliner School Buses including
+                      (8) 2007 & 2006 Newer Body Style w/ Mercedes Engines / Jeeps /
+                      Chevy Blazer / Ford E-350 Vans / JD Tractor-Loader /Mowers
+                      / Sprayers / CheTech / ClubCar / Hobart Mixers / Warehouse is Full!
+                    </p>
+                  </div>
+                  <div class="auction-card__details-auction">
+                    <h3 class="auction-card__heading">Live On-Site</h3>
+                    <p class="auction-card__text"><span class="text-important">Inspection: </span>May 09, 2017 from 9am to 10pm</p>
+                    <p class="auction-card__text"><span class="text-important">Auction: </span>May 09, 2017 from 9am to 10pm</p>
+                    <p class="auction-card__text"><span class="text-important">Location: </span>May 09, 2017 from 9am to 10pm</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
       </section>
     </main>
     <%= htmlWebpackPlugin.options.src %>

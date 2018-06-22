@@ -1,0 +1,138 @@
+.auction-card {
+  grid-column: 2 / span 1;
+  display:flex;
+  flex-direction: column;
+  background-color: $white;
+  position: relative;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid $black;
+}
+
+.auction-card__title {
+  background-color: $blue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: $white;
+  font-size: 1.3rem;
+  font-weight: 300;
+  height: auto;
+  padding: 6px 6px 50px 6px;
+  text-align: center;
+
+  @media (min-width: $med-screen) {
+    & {
+      text-align: center;
+      padding: 6px 5px 6px 45px;
+    }
+  }
+}
+
+.auction-card__body {
+  @media (min-width: $med-screen) {
+    & {
+      display: grid;
+      grid-template-columns: 250px auto;
+      grid-template-rows: repeat(2, auto);
+    }
+  }
+}
+
+.auction-card__col1 {
+  grid-column: span 1;
+  grid-row: span 2;
+  text-align: center;
+
+  @media (min-width: $med-screen) {
+    border-right: 1px solid $black;
+  }
+}
+
+.auction-card__btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+
+  @media (min-width: $med-screen) {
+    flex-direction: column;
+
+    & > .btn {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.auction-card__upcoming-auction {
+  display: none;
+  @media (min-width: $med-screen) {
+    display: block;
+  }
+}
+
+.auction-card__heading {
+  background-color: $red;
+  padding: 6px 0 6px 6px;
+  color: $white;
+
+  @media (min-width: $med-screen) {
+    margin-top: 0;
+  }
+}
+
+.auction-card__text {
+  padding-left: 6px;
+}
+
+/* Auction Card Circle Date */
+.auction-card__date {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 14px 0 11px 0;
+  color: #FFF;
+  border-radius: 50%;
+  background-color: $gold;
+  width: 80px;
+  line-height: 1;
+  transition: opacity .33s;
+  text-shadow: $circle-date-text-shadow;
+  position: absolute;
+  top: 82px;
+  transition: all 0.3s;
+
+  @media (min-width: 442px) {
+    top: 62px;
+  }
+  @media (min-width: $med-screen) {
+    top: -18px;
+    left: -38px;
+    bottom: inherit;
+  }
+}
+
+.auction-card__date--sold {
+  background-color: $red;
+}
+
+.auction-card__date:hover {
+  opacity: .75;
+}
+
+.auction-card__date--beige {
+  background-color: #F4D35E;
+}
+
+.auction-card__date__month {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.auction-card__date__day {
+  display: block;
+  font-size: 2.02rem;
+  font-weight: 700;
+}
