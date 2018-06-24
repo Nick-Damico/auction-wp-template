@@ -95,3 +95,9 @@
   color: $white;
   transition: transform 0.4s;
 }
+
+.footer-social__list {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 2rem);
+}
