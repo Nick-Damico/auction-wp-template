@@ -7,6 +7,10 @@
     // margin: 50px 0 0 50px;
     color: $white;
     transition: background-color 0.5s;
+
+    @media (min-width: $med-screen) {
+       min-width: 130px;
+     }
 }
 
 // Button Sizes
@@ -52,40 +56,60 @@
   }
 }
 
+
+
 /* Special Button Classes */
-.btn__details,
-.btn__pics,
-.btn__bid {
-  text-align: center;
-  align-self: center;
-
-  @media (min-width: $med-screen) {
-    width: 120px;
-  }
-
-  &::before {
-    position: absolute;
-    left: 5px;
-    height: 20px;
-    width: 20px;
-  }
+.icon {
+  width: 1.1rem;
+  height: 1rem;
+  display: inline-block;
+  margin-right: 2px;
 }
 
-.btn__details {
-  &::before {
-    content: url('../images/icon--details.svg');
-  }
+.icon--details {
+  content: url('../images/icon--details.svg');
 }
 
-.btn__pics {
-  &::before {
-    content: url('../images/icon--pics.svg');
-  }
+.icon--gavel {
+  content: url('../images/icon--gavel.svg');
 }
 
-.btn__bid {
-  max-width: 100%;
-  &::before {
-    content: url('../images/icon--gavel.svg');
-  }
+.icon--pics {
+  content: url('../images/icon--pics.svg');
 }
+
+
+// .btn__details,
+// .btn__pics,
+// .btn__bid {
+//   text-align: center;
+//   align-self: center;
+//
+//
+//
+//   &::before {
+//     position: absolute;
+//     left: 5px;
+//     height: 20px;
+//     width: 20px;
+//   }
+// }
+//
+// // .btn__details {
+// //   &::before {
+// //     content: url('../images/icon--details.svg');
+// //   }
+// // }
+//
+// .btn__pics {
+//   &::before {
+//     content: url('../images/icon--pics.svg');
+//   }
+// }
+
+// .btn__bid {
+//   max-width: 100%;
+//   &::before {
+//     content: url('../images/icon--gavel.svg');
+//   }
+// }

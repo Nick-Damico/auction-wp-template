@@ -38,7 +38,9 @@
   }
 }
 
+/* Auction-card Column 1 */
 .auction-card__col1 {
+  position: relative;
   grid-column: span 1;
   grid-row: span 2;
   text-align: center;
@@ -46,6 +48,31 @@
   @media (min-width: $med-screen) {
     border-right: 1px solid $black;
   }
+}
+
+.image-container {
+  position: relative;
+  z-index: 90;
+}
+
+.auction-card__image {
+  width: 100%;
+}
+
+.auction-card--sold .image-container::after {
+  content: "Sold";
+  position: absolute;
+  background-color: rgba($red, .3);
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 3px;
+  left: 0px;
 }
 
 .auction-card__btn-container {
@@ -62,6 +89,12 @@
       margin-bottom: 5px;
     }
   }
+}
+
+/* Auction-card column 2 */
+.auction-card__col2 {
+  grid-column: 2 / span 1;
+  grid-row: span 2;
 }
 
 .auction-card__upcoming-auction {
@@ -100,6 +133,7 @@
   text-shadow: $circle-date-text-shadow;
   position: absolute;
   top: 82px;
+  z-index: 91;
   transition: all 0.3s;
 
   @media (min-width: 442px) {
@@ -112,7 +146,7 @@
   }
 }
 
-.auction-card__date--sold {
+.auction-card--sold .auction-card__date {
   background-color: $red;
 }
 
