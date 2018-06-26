@@ -1,7 +1,7 @@
 // Import styles
 import './sass/main.scss';
 // Import javaScript Modules
-import Navigation from './Navigation';
+import Navigation from './modules/Navigation';
 import Flickity from 'flickity';
 
 // Instantiate Objects
