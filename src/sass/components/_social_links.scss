@@ -1,4 +1,12 @@
-.fab {
-  color: $gold;
+.fab,
+.fas {
+  color: $white;
   font-size: 2rem;
+  transition: transform 0.4s;
+
+  &:hover,
+  &:active {
+    color: $gold;
+    transform: translateY(-4px);
+  }
 }
