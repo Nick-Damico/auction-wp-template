@@ -33,6 +33,13 @@ const config = {
       meta: {
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
       }
+    }),
+    new HtmlWebpackPlugin({
+      filename: "single.html",
+      template: commonPaths.srcPath + "/single.html",
+      meta: {
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+      }
     })
   ]
 };
