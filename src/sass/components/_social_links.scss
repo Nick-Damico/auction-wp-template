@@ -1,5 +1,4 @@
-.fab,
-.fas {
+.footer__fab {
   color: $white;
   font-size: 2rem;
   transition: transform 0.4s;
@@ -8,5 +7,19 @@
   &:active {
     color: $gold;
     transform: translateY(-4px);
+  }
+}
+
+// Share Details page social icons
+.share__fab {
+  color: $white;
+  font-size: 1.6rem;
+  transition: transform 0.4s,
+              color;
+
+  &:hover,
+  &:active {
+    color: $gold;
+    transform: scale(1.1);
   }
 }
