@@ -1,0 +1,49 @@
+.section__heading--schedule {
+  grid-column: 1 / -1;
+  background-color: $blue;
+  border-bottom: 2px solid darken($blue, 10%);
+}
+
+.schedule {
+  display: grid;
+  grid-template-rows: 45px auto;
+}
+
+.inspection-auction {
+  display: grid;
+  grid-template-columns: 1fr;
+  @media (min-width: $med-screen) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.schedule__heading {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-decoration: underline;
+  padding-left: 8px;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.auction__start,
+.auction__end,
+.inspection__start,
+.inspection__end {
+  display: block;
+  padding-left: 8px;
+  font-size: 1.4rem;
+}
+
+.inspection,
+.auction {
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  justify-content: center;
+  align-content: center;
+
+  @media (min-width: $med-screen) {
+    min-height: 300px;
+  }
+}

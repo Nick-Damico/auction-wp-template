@@ -1,0 +1,20 @@
+.photos {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 45px auto;
+}
+
+.section__heading--photo {
+  grid-column: 1 / -1;
+  background-color: $blue;
+  border-bottom: 2px solid darken($blue, 10%);
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1 / -1;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 350px;
+}

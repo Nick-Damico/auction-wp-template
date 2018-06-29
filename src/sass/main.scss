@@ -19,11 +19,23 @@
 
 // Import Components
 @import "components/buttons";
+@import "components/icons";
 @import "components/navigation";
 @import "components/logo";
 @import "components/carousel";
 @import "components/auction-card";
 @import "components/social_links";
 
-// Single.html Components
-@import "components/hero.scss";
+////////////////////////////////////////
+// Single.html Components And Layouts
+////////////////////////////////////////
+
+// Import Layouts
+@import "layout/summary-docs";
+@import "layout/photos";
+@import "layout/map-directions";
+@import "layout/schedule";
+@import "layout/auction-terms";
+
+// Import Components
+@import "components/hero";

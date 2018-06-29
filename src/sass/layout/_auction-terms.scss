@@ -1,0 +1,17 @@
+.section__heading--terms {
+  grid-column: 1 / -1;
+  background-color: $blue;
+  border-bottom: 2px solid darken($blue, 10%);
+}
+
+.auction-terms {
+  display: grid;
+  grid-template-rows: 45px auto;
+}
+
+.auction-terms__content {
+  color: $red;
+  font-size: 3rem;
+  text-align: center;
+  min-height: 350px;
+}

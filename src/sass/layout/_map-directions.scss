@@ -1,0 +1,35 @@
+.map-directions {
+  display: grid;
+  grid-template-columns: 1fr;
+  @media (min-width: $med-screen) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.section__heading--directions {
+  grid-column: 1 / -1;
+  background-color: $blue;
+  border-bottom: 2px solid darken($blue, 10%);
+}
+
+// Map Section
+.map {
+  display: grid;
+  grid-template-rows: 45px auto;
+  min-height: 350px;
+  background-color: teal;
+}
+
+.section__heading--map {
+  grid-column: 1 / -1;
+  background-color: $blue;
+  border-bottom: 2px solid darken($blue, 10%);
+}
+
+// Directions Section
+.directions {
+  display: grid;
+  grid-template-rows: 45px auto;
+  min-height: 350px;
+  background-color: firebrick;
+}
