@@ -13,8 +13,17 @@
 .photo-container {
     display: flex;
     flex-direction: row;
-    grid-column: 1 / -1;
     flex-wrap: wrap;
+    grid-column: 1 / -1;
     justify-content: center;
-    min-height: 350px;
+}
+
+.photo__col {
+  max-width: 220px;
+  margin: 5px;
+}
+
+.col__img {
+  width: 100%;
+  margin: 5px;
 }

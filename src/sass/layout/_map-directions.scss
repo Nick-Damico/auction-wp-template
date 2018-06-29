@@ -18,6 +18,8 @@
   grid-template-rows: 45px auto;
   min-height: 350px;
   background-color: teal;
+  background: url('../images/google-map-holder@2x.jpg') no-repeat center;
+  background-size: cover;
 }
 
 .section__heading--map {
@@ -31,5 +33,12 @@
   display: grid;
   grid-template-rows: 45px auto;
   min-height: 350px;
-  background-color: firebrick;
+  // background-color: firebrick;
+}
+
+.directions__text {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }

@@ -5,17 +5,19 @@
 }
 
 // Share Banner in Hero Section top row only
-.share-banner {
-  background-color: $red;
-  color: $white;
-  font-size: 1.4rem;
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 6px auto 6px;
+
+.wrapper-inner--share {
   justify-content: end;
 }
 
+.share-banner {
+  background-color: $red;
+  grid-column: 1 / -1;
+}
+
 .share__list {
+  color: $white;
+  font-size: 1.4rem;
   grid-column: 2 / span 1;
   display: flex;
   flex-direction: row;
