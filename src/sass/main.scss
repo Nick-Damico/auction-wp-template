@@ -2,9 +2,6 @@
 @import "vendor/normalize";
 @import "vendor/fonts";
 
-// Import Styles from node_modules
-@import "/node_modules/flickity/dist/flickity.min.css";
-@import "/node_modules/lightbox2/dist/css/lightbox.min.css";
 // Import Base/Partial Styles | Normalize | Variables
 @import "partials/variables";
 @import "partials/base";
