@@ -24,7 +24,9 @@
   "homepage": "https://github.com/Nick-Damico/auction-wp-template#readme",
   "dependencies": {
     "flickity": "^2.1.2",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "jquery": "^3.3.1",
+    "lightbox2": "^2.10.0"
   },
   "devDependencies": {
     "browser-sync": "^2.24.4",

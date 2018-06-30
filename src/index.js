@@ -3,6 +3,8 @@ import './sass/main.scss';
 // Import javaScript Modules
 import Navigation from './modules/Navigation';
 import Flickity from 'flickity';
+import jQuery from 'jquery';
+import Lightbox2 from 'lightbox2';
 
 // Instantiate Objects
 new Navigation();

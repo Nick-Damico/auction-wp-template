@@ -19,8 +19,15 @@
 }
 
 .photo__col {
-  max-width: 220px;
-  margin: 5px;
+  max-width: 125px;
+  margin: 0px 5px 0 5px;
+  @media (min-width: 400px) {
+    max-width: 150px;
+    margin: 5px;
+  }
+  @media (min-width: 850px) {
+    max-width: 200px;
+  }
 }
 
 .col__img {
