@@ -1,9 +1,9 @@
-// Import styles
-import './sass/main.scss';
-
 // Import Styles from node_modules
 import "flickity/dist/flickity.css";
 import "lightbox2/dist/css/lightbox.css";
+
+// Import styles
+import './sass/main.scss';
 
 // Import javaScript Modules
 import Navigation from './modules/Navigation';
