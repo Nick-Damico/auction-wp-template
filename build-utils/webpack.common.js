@@ -40,6 +40,13 @@ const config = {
       meta: {
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
       }
+    }),
+    new HtmlWebpackPlugin({
+      filename: "contact.html",
+      template: commonPaths.srcPath + "/contact.html",
+      meta: {
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+      }
     })
   ]
 };
