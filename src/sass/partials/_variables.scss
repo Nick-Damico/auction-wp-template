@@ -8,7 +8,7 @@ $white:  #FCFCFC;
 $grey:   #444;
 
 /* Size Variables */
-$max-width: 960px;
+$max-width: 1200px;
 
 /* Text Shadow */
 $featured-text-shadow: 1px 1px 2px rgba($black, 0.8);
@@ -17,3 +17,4 @@ $circle-date-text-shadow: $featured-text-shadow;
 /* Media Query's */
 $small-screen: 549px;
 $med-screen:   699px;
+$lg-screen:    999px;
