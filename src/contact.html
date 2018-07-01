@@ -1,73 +1,117 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="UTF-8">
     <title>D'Amico Auctions & Appraisals, A Leader in Liquadation of New Car Dealerships</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   </head>
+
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="wrapper-inner wrapper-inner--header">
-          <img class="site-logo" src=<%= require("./images/gavel-logo.svg") %> alt="damico auctions logo" />
+          <img class="site-logo" src=<%= require( "./images/gavel-logo.svg") %> alt="damico auctions logo" />
           <span class="logo">
-            <h1 class="logo-title">Damico <span class="italic">Auctions</span></h1>
-            <p class="logo-subtitle">David D'Amico | Auctioneer</p>
+              <h1 class="logo-title">Damico <span class="italic">Auctions</span></h1>
+          <p class="logo-subtitle">David D'Amico | Auctioneer</p>
           </span>
           <nav class="navigation" role="navigation">
             <!-- hamburger navigation button -->
             <a href="#" id="navBtn" class="nav-btn" href="#" aria-expanded="false" aria-controls="nav-list">
-              <span class="nav-btn__line nav-btn__line--1"></span>
-              <span class="nav-btn__line nav-btn__line--2"></span>
-              <span class="nav-btn__line nav-btn__line--3"></span>
-            </a>
+                <span class="nav-btn__line nav-btn__line--1"></span>
+                <span class="nav-btn__line nav-btn__line--2"></span>
+                <span class="nav-btn__line nav-btn__line--3"></span>
+              </a>
             <ul id="navList" class="nav-list">
               <li class="nav-items selected"><a class="nav-links" href="#">Home</a></li>
               <li class="nav-items"><a class="nav-links" href="index.html">Auctions</a></li>
-              <li class="nav-items"><a class="nav-links" href="http://dealershipappraisals.com">Appraisals</a></li>
+              <li class="nav-items"><a class="nav-links" href="http://www.dealershipappraisals.com">Appraisals</a></li>
               <li class="nav-items"><a class="nav-links" href="#">Contact</a></li>
             </ul>
           </nav>
-        </div> <!-- End of .wrapper__header -->
+        </div>
+        <!-- End of .wrapper__header -->
       </header>
-     </div> <!-- End of wrapper -->
+    </div>
+    <!-- End of wrapper -->
 
     <!-- Featured Auction Hero -->
     <div class="hero">
-      <div class="share-banner">
-        <div class="wrapper wrapper-inner wrapper-inner--share">
-          <ul class="share__list">
-            <li><span class="share__title">Share</span></li>
-            <li class="share__item"><a href="" class="share__link"><i class="fab share__fab fa-linkedin"></i></a></li>
-            <li class="share__item"><a href="" class="share__link"><i class="fab share__fab fa-facebook-square"></i></a></li>
-            <li class="share__item"><a href="" class="share__link"><i class="fab share__fab fa-twitter-square"></i></a></li>
-            <li class="share__item"><a href="" class="share__link"><i class="fas share__fab fa-envelope-square"></i></a></li>
-          </ul>
-        </div>
+      <div class="hero-inner">
+        <h1 class="hero__title">AUTOMOTIVE REPAIR EQUIPMENT. A & W Complete Automotive Care. FLORENCE, KENTUCKY</h1>
       </div>
-     <div class="hero-inner">
-       <h3 class="hero__auction-type">Live On-Site Auction</h3>
-       <h1 class="hero__title">AUTOMOTIVE REPAIR EQUIPMENT. A & W Complete Automotive Care. FLORENCE, KENTUCKY</h1>
-       <hr class="hero__hr">
-       <p class="hero__date-time">
-         May 09, 2018. at 2pm EST.
-       </p>
-     </div>
     </div>
 
     <main class="main-container">
       <div class="wrapper wrapper-inner wrapper-inner--summary">
-        Contact Form Area
-     </div> <!-- End of .wrapper-inner -->
+        <section class="statement">
+          <h2 class="statement__title">Auctioneer &amp; Appraiser</h2>
+          <p class="statement__text">
+            D'Amico Auctions is recognized as a leading "Liquidator and Appraiser of New Car Dealerships." Having conducted hundreds of successful auctions and appraisals for all major auto groups coast-to-coast, in Florida and across the USA!
+          </p>
+          <p class="statement__text">
+            Highly respected for honesty, hard work, and skilled personnel, D'Amico Auctions utilizes the latest in computerized technology and equipment to handle your auction and appraisal needs.
+          </p>
+          <p class="statement__text">
+            The keys to any well-planned auction include product knowledge and aggressive target marketing through direct mail, the news media and, of course, the Internet.
+          </p>
+        </section> <!-- End of .statement Section -->
+
+        tion class="contact">
+          <div class="get-in-touch">
+            <h4 class="get-in-touch__title">Get In Touch.</h4>
+          </div> <!-- End of .get-in-touch -->
+
+          <div class="email-list">
+            <p class="email-list__text">
+              <span class="email-list__phone">941-377-6310</span> or <span class="email-list__email">Email Us</span>
+            </p>
+            <form action="#" method="POST">
+              <h3 class="email-list__title">Join Our Email List</h3>
+              <input id="emailListSignup" class="email-list__input" type="email" />
+              <button class="eamil-list__submit-btn">Sign Up</button>
+            </form>
+          </div> <!-- End of .email-list -->
+
+          <div class="contact-container">
+            <form action="#" method="POST" class="contact-form">
+              <h3>Contact Form.</h3>
+              <div class="contact__input-container">
+                <label class="contact__label" for="contactName">Name</label>
+                <input id="contactName" type="text" name="name" class="contact__input contact__input--name" required />
+              </div>
+
+              <div class="contact__input-container">
+                <label class="contact__label" for="contactEmail">Email</label>
+                <input id="contactEmail" type="email" name="email" class="contact__input contact__input--email" required />
+              </div>
+
+              <div class="contact__input-container">
+                <label class="contact__label" for="contactTelephone">Telephone</label>
+                <input id="contactTelephone" type="text" class="contact__input contact__input--telephone" />
+              </div>
+
+              <div class="contact__input-container">
+                <label class="contact__label" for="contactMessage">Message</label>
+                <textarea id="contactMessage" type="text" class="contact__input contact__input--telephone"></textarea>
+              </div>
+
+              <div class="contact__input-container">
+                <button class="contact__submit-btn">Send</button>
+              </div>
+            </form>
+          </div> <!-- End of .contact-container -->
+
+        </section> <!-- End of .contact -->
+      </div> <!-- End of .wrapper-inner -->
     </main>
 
     <footer class="footer">
       <section class="footer-section footer-section--1">
         <h4 class="footer__title">D'Amico Auctions</h4>
         <p class="footer__text">
-          Is recognized as a leading "Liquidator and Appraiser of New Car Dealerships."
-          Having conducted hundreds of successful auctions and appraisals for all major
-          auto groups coast-to-coast, in Florida and across the USA
+          Is recognized as a leading "Liquidator and Appraiser of New Car Dealerships." Having conducted hundreds of successful auctions and appraisals for all major auto groups coast-to-coast, in Florida and across the USA
         </p>
       </section>
 
@@ -85,7 +129,7 @@
         <p class="footer__text">
           <ul class="footer-social__list">
             <li><a href="" class="footer-social__link"><i class="fab footer__fab fa-linkedin"></i></a</li>
-            <li><a href="" class="footer-social__link"><i class="fab footer__fab fa-facebook-square"></i></a></li>
+              <li><a href="" class="footer-social__link"><i class="fab footer__fab fa-facebook-square"></i></a></li>
             <li><a href="" class="footer-social__link"><i class="fab footer__fab fa-twitter-square"></i></a></li>
             <li><a href="" class="footer-social__link"><i class="fas footer__fab fa-envelope-square"></i></a></li>
           </ul>
@@ -94,17 +138,14 @@
       <section class="footer-section footer-section--4">
         <h4 class="footer__title">David D'Amico | Auctioneer</h4>
         <p class="footer__text">
-          Auctioneer / CAGA, GPPA
-          & USPAP Compliant Appraiser
-          / Licensed RE Broker
-          AU 1441 / AB 2209
+          Auctioneer / CAGA, GPPA & USPAP Compliant Appraiser / Licensed RE Broker AU 1441 / AB 2209
         </p>
         <address class="footer__text">
-          Sarasota, FL <br>
-          Smoky Mtns, TN <br>
-          Tel: (941)377-6310 <br>
-          eFax: (413)778-6310 <br>
-        </address>
+            Sarasota, FL <br>
+            Smoky Mtns, TN <br>
+            Tel: (941)377-6310 <br>
+            eFax: (413)778-6310 <br>
+          </address>
       </section>
       <div class="copyright-info">
         <small>Copyright &copy; 2018 D'Amico Auctions - All Rights Reserved</small>
@@ -112,5 +153,6 @@
       </div>
     </footer>
     <%= htmlWebpackPlugin.options.src %>
-</body>
+  </body>
+
 </html>
