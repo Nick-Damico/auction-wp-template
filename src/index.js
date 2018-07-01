@@ -74,3 +74,8 @@ new Flickity( '#carousel', {
   wrapAround: true
   // at end of cells, wraps-around to first for infinite scrolling
 });
+
+Lightbox2.option({
+  'fitImagesInViewport': true,
+  'positionFromTop': 200
+})
