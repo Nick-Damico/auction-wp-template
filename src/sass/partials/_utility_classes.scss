@@ -9,3 +9,9 @@
 .italic {
   font-style: italic;
 }
+
+.section__heading {
+  grid-column: 1 / -1;
+  background-color: $blue;
+  border-bottom: 2px solid darken($blue, 10%);
+}

@@ -1,9 +1,3 @@
-.section__heading--schedule {
-  grid-column: 1 / -1;
-  background-color: $blue;
-  border-bottom: 2px solid darken($blue, 10%);
-}
-
 .schedule {
   display: grid;
   grid-template-rows: 45px auto;

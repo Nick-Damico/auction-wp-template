@@ -6,12 +6,6 @@
   }
 }
 
-.section__heading--directions {
-  grid-column: 1 / -1;
-  background-color: $blue;
-  border-bottom: 2px solid darken($blue, 10%);
-}
-
 // Map Section
 .map {
   display: grid;
@@ -20,12 +14,6 @@
   background-color: teal;
   background: url('../images/google-map-holder@2x.jpg') no-repeat center;
   background-size: cover;
-}
-
-.section__heading--map {
-  grid-column: 1 / -1;
-  background-color: $blue;
-  border-bottom: 2px solid darken($blue, 10%);
 }
 
 // Directions Section
