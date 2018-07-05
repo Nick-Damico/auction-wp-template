@@ -4,6 +4,12 @@
   grid-template-rows: 35px 1fr;
 }
 
+.hero--contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(auto-fit, 300px);
+}
+
 // Share Banner in Hero Section top row only
 
 .wrapper-inner--share {
