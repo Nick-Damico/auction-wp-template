@@ -34,15 +34,26 @@
   padding-right: 8px;
 }
 
+
 .wrapper-inner--summary {
   padding-left: 0;
 }
 
+/* Controls carousel dots positioning */
 .dot-container {
   background-color: $blue;
   height: 30px;
 }
 
+/********************************************
+ Controls Main Element on Auction Details &
+ Contact.html
+ ********************************************/
 .main-container {
   background-color: $white;
+}
+
+.main-container--contact {
+  display: flex;
+  flex-direction: column;
 }

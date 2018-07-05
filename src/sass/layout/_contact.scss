@@ -1,0 +1,37 @@
+//////////////////////////////
+// Section .statement
+//////////////////////////////
+
+.statement {
+  display: flex;
+  flex-direction: column;
+  padding: 26px 0;
+  @media (min-width: $med-screen) {
+    align-content: center;
+  }
+}
+
+.statement__title {
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: $white;
+  background: linear-gradient(to right, $blue 70%, transparent);
+  padding: 8px 4px;
+  @media (min-width: $med-screen) {
+    text-align: center;
+    margin-bottom: 1.8rem;
+  }
+}
+
+.statement__text {
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.040rem;
+  line-height: 1.4;
+  max-width: 800px;
+  @media (min-width: $med-screen) {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.2rem;
+  }
+}
