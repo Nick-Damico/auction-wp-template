@@ -7,21 +7,34 @@
 @import "partials/base";
 @import "partials/utility_classes";
 
-// Layout
+// Global Layout Elements
 @import "layout/containers";
 @import "layout/header";
-@import "layout/featured";
-@import "layout/calender";
 @import "layout/footer";
 
-// Import Components
+// Global Components
 @import "components/buttons";
 @import "components/icons";
 @import "components/navigation";
 @import "components/logo";
+@import "components/social_links";
+
+
+
+//////////////////////////////////////////////
+// Template.html Components And Layouts
+// Template is the Auction Calender Home Page
+//////////////////////////////////////////////
+
+// Layout
+@import "layout/featured";
+@import "layout/calender";
+
+// Import Components
 @import "components/carousel";
 @import "components/auction-card";
-@import "components/social_links";
+
+
 
 ////////////////////////////////////////
 // Single.html Components And Layouts
@@ -36,3 +49,11 @@
 
 // Import Components
 @import "components/hero";
+
+
+
+////////////////////////////////////////
+// Contact.html Components And Layouts
+////////////////////////////////////////
+
+// Import Layouts
