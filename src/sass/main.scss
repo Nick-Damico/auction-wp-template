@@ -5,7 +5,6 @@
 // Import Base/Partial Styles | Normalize | Variables
 @import "partials/variables";
 @import "partials/base";
-@import "partials/utility_classes";
 
 // Global Layout Elements
 @import "layout/containers";
@@ -61,3 +60,11 @@
 
 // Import Components
 @import "components/contact-banner";
+
+
+////////////////////////////////////////
+// Utilites_classes for modifying styles
+// and overriding
+////////////////////////////////////////
+
+@import "partials/utility_classes";

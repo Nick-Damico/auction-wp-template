@@ -65,41 +65,41 @@
         <form action="#" method="POST">
           <h3 class="email-list__title">Join Our Email List</h3>
           <input id="emailListSignup" class="email-list__input" type="email" />
-          <button class="email-list__submit-btn italic">Sign Up</button>
+          <button class="form-btn form-btn--email-list italic">Sign Up</button>
         </form>
       </section> <!-- End of .contact -->
 
       <div class="contact-form__container">
         <form action="#" method="POST" class="contact-form">
-          <h3>Contact Form.</h3>
+          <h3 class="contact-form__title">Contact Form.</h3>
           <div class="contact__input-container">
-            <label class="contact__label" for="contactName">Name</label>
+            <label class="contact__label" for="contactName">Name</label><br />
             <input id="contactName" type="text" name="name" class="contact__input contact__input--name" required />
           </div>
 
           <div class="contact__input-container">
-            <label class="contact__label" for="contactEmail">Email</label>
+            <label class="contact__label" for="contactEmail">Email</label><br />
             <input id="contactEmail" type="email" name="email" class="contact__input contact__input--email" required />
           </div>
 
           <div class="contact__input-container">
-            <label class="contact__label" for="contactTelephone">Telephone</label>
+            <label class="contact__label" for="contactTelephone">Telephone</label><br />
             <input id="contactTelephone" type="text" class="contact__input contact__input--telephone" />
           </div>
 
           <div class="contact__input-container">
-            <label class="contact__label" for="contactMessage">Message</label>
-            <textarea id="contactMessage" type="text" class="contact__input contact__input--telephone"></textarea>
+            <label class="contact__label" for="contactMessage">Message</label><br />
+            <textarea id="contactMessage" type="text" class="contact__input contact__input--message"></textarea>
           </div>
 
           <div class="contact__input-container">
-            <button class="contact__submit-btn">Send</button>
+            <button class="form-btn form-btn--contact italic">Send</button>
           </div>
         </form>
       </div> <!-- End of .contact-container -->
     </main>
 
-    <footer class="footer">
+    <footer class="footer no-top-margin">
       <section class="footer-section footer-section--1">
         <h4 class="footer__title">D'Amico Auctions</h4>
         <p class="footer__text">

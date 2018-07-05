@@ -79,37 +79,16 @@
 }
 
 
-// .btn__details,
-// .btn__pics,
-// .btn__bid {
-//   text-align: center;
-//   align-self: center;
-//
-//
-//
-//   &::before {
-//     position: absolute;
-//     left: 5px;
-//     height: 20px;
-//     width: 20px;
-//   }
-// }
-//
-// // .btn__details {
-// //   &::before {
-// //     content: url('../images/icon--details.svg');
-// //   }
-// // }
-//
-// .btn__pics {
-//   &::before {
-//     content: url('../images/icon--pics.svg');
-//   }
-// }
+.form-btn {
+  padding: 6px 24px;
+}
 
-// .btn__bid {
-//   max-width: 100%;
-//   &::before {
-//     content: url('../images/icon--gavel.svg');
-//   }
-// }
+.form-btn--email-list {
+  background-color: $gold;
+  color: $black;
+}
+
+.form-btn--contact {
+  background-color: $blue;
+  color: $white;
+}

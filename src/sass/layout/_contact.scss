@@ -110,11 +110,6 @@
   font-size: 1.5rem;
 }
 
-.email-list__submit-btn {
-  background: $gold;
-  padding: 6px 24px;
-}
-
 .email-list__input {
   padding: 5px;
   margin-right: -2px;
@@ -123,4 +118,35 @@
   @media (min-width: $med-screen) {
     width: 300px;
   }
+}
+
+
+
+//////////////////////////////
+// Section .contact-form
+//////////////////////////////
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form__title {
+  margin: 0 0 12px 0;
+  font-size: 2.2rem;
+}
+
+.contact__input-container {
+  max-width: 350px;
+  width: 90%;
+  margin-bottom: 8px;
+}
+
+.contact__input {
+  width: 100%;
+}
+
+.contact__input--message {
+  height: 120px;
 }
