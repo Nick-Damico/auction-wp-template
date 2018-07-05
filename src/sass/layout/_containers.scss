@@ -34,7 +34,6 @@
   padding-right: 8px;
 }
 
-
 .wrapper-inner--summary {
   padding-left: 0;
 }
@@ -56,4 +55,8 @@
 .main-container--contact {
   display: flex;
   flex-direction: column;
+}
+
+.contact-form__container {
+  padding: 64px 0;
 }

@@ -35,3 +35,92 @@
     font-size: 1.2rem;
   }
 }
+
+.statement__text--last {
+  margin-bottom: 0;
+}
+
+
+
+//////////////////////////////
+// Section .contact
+//////////////////////////////
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: $blue;
+  color: $white;
+  text-align: center;
+  padding: 26px;
+  align-items: center;
+}
+
+.contact__title {
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: $white;
+  @media (min-width: $med-screen) {
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.contact__text {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.contact__link {
+  color: $white;
+  font-size: 1.5rem;
+  transition: color 0.4s;
+
+  &:hover,
+  &:active {
+    color: $gold;
+  }
+
+  &:hover .contact__icon {
+    transform: translateY(-4px);
+  }
+}
+
+.contact__icon {
+  margin-right: 3px;
+  transition: transform 0.4s;
+}
+
+.contact__phone {
+  margin-right: 4px;
+}
+
+.contact__email {
+  margin-left: 4px;
+}
+
+
+//////////////////////////////
+// Section .email-list
+//////////////////////////////
+
+.email-list__title {
+  font-weight: 400;
+  color: $black;
+  font-size: 1.5rem;
+}
+
+.email-list__submit-btn {
+  background: $gold;
+  padding: 6px 24px;
+}
+
+.email-list__input {
+  padding: 5px;
+  margin-right: -2px;
+  width: 100%;
+  margin-bottom: 6px;
+  @media (min-width: $med-screen) {
+    width: 300px;
+  }
+}
