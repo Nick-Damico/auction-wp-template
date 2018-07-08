@@ -10,6 +10,10 @@
 }
 
 .auction-card__title {
+  /* Flex properties keep small titles in center of heading */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: $blue;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -17,6 +21,7 @@
   font-size: 1.3rem;
   font-weight: 300;
   height: auto;
+  min-height: 125px;
   padding: 6px 6px 50px 6px;
   text-align: center;
   width: 100%;
@@ -25,6 +30,7 @@
     & {
       text-align: center;
       padding: 10px 5px 10px 45px;
+      min-height: initial;
     }
   }
 }
@@ -138,7 +144,7 @@
   transition: all 0.3s;
 
   @media (min-width: 442px) {
-    top: 62px;
+    top: 82px;
   }
   @media (min-width: $med-screen) {
     top: -18px;
