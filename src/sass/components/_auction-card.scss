@@ -19,12 +19,12 @@
   height: auto;
   padding: 6px 6px 50px 6px;
   text-align: center;
+  width: 100%;
 
   @media (min-width: $med-screen) {
     & {
       text-align: center;
-      padding: 6px 5px 6px 45px;
-      width: 100%;
+      padding: 10px 5px 10px 45px;
     }
   }
 }
