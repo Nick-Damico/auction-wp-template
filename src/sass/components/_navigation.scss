@@ -69,6 +69,11 @@
   transition: transform .4s;
 }
 
+.selected .nav-links {
+  color: $black;
+  background-color: $gold;
+}
+
 .nav-links {
   display: block;
   padding: 8px 0 8px 14px;
