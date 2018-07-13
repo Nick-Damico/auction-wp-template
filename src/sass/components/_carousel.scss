@@ -60,7 +60,7 @@
   flex-direction: column;
   position: relative;
   z-index: 80;
-  align-self: start;
+  align-self: center;
   max-width: 100%;
   text-align: center;
 
@@ -81,6 +81,10 @@
       & {
         max-width: 60%;
       }
+    }
+
+    @media (min-width: $lg-screen) {
+      max-width: 40%;
     }
   }
 
