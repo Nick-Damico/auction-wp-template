@@ -10,10 +10,11 @@ import Navigation from './modules/Navigation';
 import Flickity from 'flickity';
 import jQuery from 'jquery';
 import Lightbox2 from 'lightbox2';
+import GoogleMap from './modules/GoogleMap';
 
 // Instantiate Objects
 new Navigation();
-
+new GoogleMap();
 new Flickity( '#carousel', {
   // options, defaults listed
   accessibility: true,
