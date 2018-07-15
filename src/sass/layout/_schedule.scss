@@ -5,6 +5,7 @@
 
 .inspection-auction {
   display: grid;
+  background-color: $gold;
   grid-template-columns: 1fr;
   @media (min-width: $med-screen) {
     grid-template-columns: 1fr 1fr;
@@ -38,6 +39,6 @@
   align-content: center;
 
   @media (min-width: $med-screen) {
-    min-height: 300px;
+    min-height: 200px;
   }
 }

@@ -4,8 +4,23 @@
 }
 
 .auction-terms__content {
-  color: $red;
-  font-size: 3rem;
+  margin: 1rem auto;
+  background-color: $white;
+  color: $black;
   text-align: center;
-  min-height: 350px;
+  min-height: 250px;
+  font-size: 1.2rem;
+  padding: 8px 8px 24px 8px;
+  max-width: 700px;
+
+  h1,h2,h3,h4,h5,h6 {
+    color: $red;
+    margin-top: 1rem;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
 }
