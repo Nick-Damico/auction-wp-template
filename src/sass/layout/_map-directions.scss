@@ -24,9 +24,18 @@
   // background-color: firebrick;
 }
 
-.directions__text {
-  padding-left: 8px;
-  padding-right: 8px;
+.directions__inner {
   font-size: 1.2rem;
-  line-height: 1.5;
+  padding: 8px 8px 24px 8px;
+  max-width: 700px;
+
+  h1,h2,h3,h4,h5,h6 {
+    margin-top: 1rem;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
 }
