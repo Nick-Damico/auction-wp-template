@@ -19,7 +19,7 @@ class Navigation {
       this.navEl.classList.remove('open');
     }
   }
-  
+
 };
 
 module.exports = Navigation;

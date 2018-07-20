@@ -1,4 +1,5 @@
 /* Main Site Navigation in Header Element */
+// Styles for 'Archive' link dropdown at bottom
 
 .navigation {
   display: grid;
@@ -22,12 +23,14 @@
   left: 0;
   background: #507fb9;
   color: white;
+  // Removed hidden overflow after implementing the dropdown nav for archive
   overflow: hidden;
-  z-index: 100;
+  z-index: 92;
   transition: height 0.8s ease-out;
 
   @media (min-width: 549px) {
     & {
+      overflow: initial;
       position: initial;
       height: auto;
       display: grid;
@@ -39,6 +42,10 @@
       border-right: 1px solid $black;
     }
   }
+}
+
+.nav-items {
+  position: relative;
 }
 
 .nav-btn {
@@ -88,7 +95,7 @@
     background-color: $gold;
   }
 
-  @media (min-width: 549px) {
+  @media (min-width: $med-screen) {
     & {
       text-align: center;
       padding: 28px 8px;
@@ -97,10 +104,55 @@
   }
 }
 
+.nav-items--2:hover .nav-list__sub-list {
+  display: block;
+  position: relative;
+
+  @media (min-width: $med-screen) {
+    position: absolute;
+    display: block;
+  }
+}
+
+.nav-list__sub-list {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.sub-list__nav-links {
+    text-decoration: none;
+    display: block;
+    padding: 8px 0 8px 22px;
+    background-color: #517FB9;
+    color: #FCFCFC;
+    transition: color 0.5s,
+                background-color 0.5s;
+
+    &:hover {
+      color: $black;
+      background-color: $gold;
+    }
+
+    @media (min-width: 549px) {
+      & {
+        text-align: center;
+        padding: 28px 8px;
+        border-left: 1px solid $black;
+        border-right: 1px solid $black;
+        border-top: 1px solid $black;
+      }
+    }
+}
+
+.nav-list__sub-list li:last-child {
+  border-bottom: 1px solid $black;
+}
+
 /* Toggle Navigation */
 
-[aria-expanded="true"] ~ .nav-list {
-  height: 168px;
+#navBtn[aria-expanded="true"] ~ .nav-list {
+  height: auto;
 }
 
 .nav-btn.open {
@@ -120,5 +172,7 @@
     transform-origin: 9px;
   }
 }
+
+
 
 /* Footer Navigation */
