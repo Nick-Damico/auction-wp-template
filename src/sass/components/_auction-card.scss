@@ -63,10 +63,19 @@
 .image-container {
   position: relative;
   z-index: 90;
+  margin: 0 auto;
+
+  @media (min-width: $small-screen) {
+    max-width: 90%;
+  }
+  @media (min-width: $med-screen) {
+    max-width: 100%;
+  }
 }
 
 .auction-card__image {
   width: 100%;
+  max-width: 375px;
 }
 
 .auction-card--sold .image-container::after {
@@ -107,8 +116,9 @@
   grid-row: span 2;
 }
 
-.auction-card__upcoming-auction {
+.auction-card__auction-summary {
   display: none;
+  padding-bottom: 8px;
   @media (min-width: $med-screen) {
     display: block;
   }
@@ -118,6 +128,7 @@
   background-color: $red;
   padding: 6px 0 6px 6px;
   color: $white;
+  margin-bottom: 6px;
 
   @media (min-width: $med-screen) {
     margin-top: 0;
