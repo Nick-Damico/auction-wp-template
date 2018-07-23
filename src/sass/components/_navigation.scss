@@ -8,7 +8,7 @@
   @media (min-width: 340px) {
     grid-column: end;
   }
-  @media (min-width: 549px) {
+  @media (min-width: 566px) {
     grid-column: auto;
     justify-content: initial;
   }
@@ -28,7 +28,7 @@
   z-index: 92;
   transition: height 0.8s ease-out;
 
-  @media (min-width: 549px) {
+  @media (min-width: 566px) {
     & {
       overflow: initial;
       position: initial;
@@ -61,7 +61,7 @@
   height: 32px;
   padding: 5px;
 
-  @media (min-width: 549px) {
+  @media (min-width: 566px) {
     & {
       display: none;
     }
@@ -95,7 +95,7 @@
     background-color: $gold;
   }
 
-  @media (min-width: $med-screen) {
+  @media (min-width: 566px) {
     & {
       text-align: center;
       padding: 28px 8px;
