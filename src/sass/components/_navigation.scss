@@ -16,7 +16,8 @@
 
 .nav-list {
   position: fixed;
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 0;
   top: 92px;
   right: 0;
@@ -104,11 +105,18 @@
   }
 }
 
+.nav-items--2 {
+  order: 1;
+  @media (min-width: 566px) {
+    order: 0;
+  }
+}
+
 .nav-items--2:hover .nav-list__sub-list {
   display: block;
   position: relative;
 
-  @media (min-width: $med-screen) {
+  @media (min-width: 566px) {
     position: absolute;
     display: block;
   }
