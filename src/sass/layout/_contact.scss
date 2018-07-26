@@ -5,7 +5,7 @@
 .statement {
   display: flex;
   flex-direction: column;
-  padding: 26px 0;
+  padding: 64px 0;
   @media (min-width: $med-screen) {
     align-content: center;
   }
@@ -73,6 +73,7 @@
 
 .contact__link {
   color: $white;
+  text-decoration: none;
   font-size: 1.5rem;
   transition: color 0.4s;
 
