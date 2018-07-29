@@ -121,6 +121,15 @@
   }
 }
 
+.featured__sign-up {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin-right: 6px;
+  margin-left: auto;
+  input {
+    margin-bottom: 0;
+  }
+}
 
 
 //////////////////////////////

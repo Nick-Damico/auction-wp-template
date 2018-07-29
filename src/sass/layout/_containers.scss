@@ -24,7 +24,8 @@
 }
 
 .wrapper-inner--featured {
-  grid-template-columns: 32px auto;
+  padding-left: 14px;
+  grid-template-columns: auto 1fr;
   grid-gap: 10px;
   align-content: center;
   width: 100%;

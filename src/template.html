@@ -41,8 +41,14 @@
       <section class="featured">
         <div class="featured-banner">
           <div class="wrapper-inner wrapper-inner--featured">
-            <img class="square-gave-icon" src=<%= require("./images/square-gavel-icon.svg") %> alt="damico auctions logo" />
-            <p class="featured-banner__text">Upcoming Auction</p>
+            <div class="featured-item featured-item--1">
+              <img class="square-gave-icon" src=<%= require("./images/square-gavel-icon.svg") %> alt="damico auctions logo" />
+              <p class="featured-banner__text">Upcoming Auction</p>
+            </div>
+            <form action="#" method="POST" class="featured__sign-up">
+              <input id="emailListSignup" class="email-list__input" type="email" placeholder="Join Our Mailing List" />
+              <button class="form-btn form-btn--email-list italic">Sign Up</button>
+            </form>
           </div>
         </div> <!-- end of .upcoming-banner -->
 
