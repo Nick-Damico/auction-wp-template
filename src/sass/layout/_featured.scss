@@ -26,4 +26,8 @@
   text-align: left;
   display: flex;
   align-self: center;
+  display: none;
+  @media (min-width: $med-screen) {
+    display: flex;
+  }
 }
