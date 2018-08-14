@@ -1,7 +1,7 @@
 class SignupForm {
-  constructor() {
-    this.emailSignup = jQuery('.wpcf7-submit');
-    this.responseOutput = jQuery('.wpcf7-response-output');
+  constructor(form, response) {
+    this.emailSignup = jQuery(`${form}`);
+    this.responseOutput = jQuery(`${response}`);
     this.emailSignup.on('click', this.hideOnTimeout.bind(this));
   }
 
