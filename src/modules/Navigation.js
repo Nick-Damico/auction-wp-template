@@ -25,8 +25,10 @@ class Navigation {
   closeNav(evt) {
     const currentWidth = evt.currentTarget.innerWidth;
     if (currentWidth > 565) {
-      this.navEl.setAttribute('aria-expanded', false);
+      this.state.open = false;
+      this.navEl.setAttribute('aria-expanded', this.state.open);
       this.navEl.classList.remove('open');
+      document.body.style.overflowY = 'initial';
     }
   }
 
