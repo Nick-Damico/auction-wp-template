@@ -6,10 +6,16 @@ class Navigation {
   }
 
   toggleNav(evt) {
-    const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+    const expanded = this.getAttribute('aria-expanded') === 'true';
     this.setAttribute('aria-expanded', !expanded);
     // Toggle Class to animate hamburger Icon to 'open' and 'close' state.
     this.classList.toggle('open');
+    if (this.getAttribute('aria-expanded')) {
+      document.body.style.overflowY = 'hidden';
+    } else {
+      console.log('closed');
+      document.body.style.overflowY = 'initial';
+    }
   }
 
   closeNav(evt) {

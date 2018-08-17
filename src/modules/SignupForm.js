@@ -1,3 +1,4 @@
+
 class SignupForm {
   constructor(form, response) {
     this.emailSignup = jQuery(`${form}`);
