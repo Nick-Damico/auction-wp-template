@@ -1,16 +1,20 @@
 class Navigation {
   constructor() {
     this.navEl = document.querySelector('#navBtn');
-    this.navEl.addEventListener('click', this.toggleNav);
+    this.navEl.addEventListener('click', this.toggleNav.bind(this));
     window.addEventListener('resize', this.closeNav.bind(this));
+    this.state = {
+      open: false
+    }
   }
 
   toggleNav(evt) {
-    const expanded = this.getAttribute('aria-expanded') === 'true';
-    this.setAttribute('aria-expanded', !expanded);
+    this.state.open = !this.state.open;
+    this.navEl.setAttribute('aria-expanded', this.state.open);
     // Toggle Class to animate hamburger Icon to 'open' and 'close' state.
-    this.classList.toggle('open');
-    if (this.getAttribute('aria-expanded')) {
+    // this.classList.toggle('open');
+    if (this.state.open) {
+      console.log('open');
       document.body.style.overflowY = 'hidden';
     } else {
       console.log('closed');
