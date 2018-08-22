@@ -14,10 +14,8 @@ class Navigation {
     // Toggle Class to animate hamburger Icon to 'open' and 'close' state.
     // this.classList.toggle('open');
     if (this.state.open) {
-      console.log('open');
       document.body.style.overflowY = 'hidden';
-    } else {
-      console.log('closed');
+    } else {    
       document.body.style.overflowY = 'initial';
     }
   }
