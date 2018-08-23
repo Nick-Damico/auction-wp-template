@@ -15,8 +15,10 @@ class Navigation {
     // this.classList.toggle('open');
     if (this.state.open) {
       document.body.style.overflowY = 'hidden';
-    } else {    
+      this.navEl.classList.add('open');
+    } else {
       document.body.style.overflowY = 'initial';
+      this.navEl.classList.remove('open');
     }
   }
 
