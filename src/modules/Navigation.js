@@ -12,13 +12,11 @@ class Navigation {
     this.state.open = !this.state.open;
     this.navEl.setAttribute('aria-expanded', this.state.open);
     // Toggle Class to animate hamburger Icon to 'open' and 'close' state.
-    // this.classList.toggle('open');
+    this.navEl.classList.toggle('open');
     if (this.state.open) {
       document.body.style.overflowY = 'hidden';
-      this.navEl.classList.add('open');
     } else {
-      document.body.style.overflowY = 'initial';
-      this.navEl.classList.remove('open');
+      document.body.style.overflowY = 'initial';    
     }
   }
 
