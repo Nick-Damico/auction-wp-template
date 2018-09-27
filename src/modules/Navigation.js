@@ -3,6 +3,7 @@ class Navigation {
     this.navEl = document.querySelector('#navBtn');
     this.navEl.addEventListener('click', this.toggleNav.bind(this));
     window.addEventListener('resize', this.closeNav.bind(this));
+    window.addEventListener('scroll', this.closeNav.bind(this));
     this.state = {
       open: false
     }
@@ -14,7 +15,7 @@ class Navigation {
     // Toggle Class to animate hamburger Icon to 'open' and 'close' state.
     this.navEl.classList.toggle('open');
     if (this.state.open) {
-      document.body.style.overflowY = 'hidden';
+      // document.body.style.overflowY = 'hidden';
     } else {
       document.body.style.overflowY = 'initial';
     }
@@ -22,7 +23,7 @@ class Navigation {
 
   closeNav(evt) {
     const currentWidth = evt.currentTarget.innerWidth;
-    if (currentWidth > 565 || window.scrollY > 399) {
+    if (currentWidth > 565 || window.scrollY > 350) {
       this.state.open = false;
       this.navEl.setAttribute('aria-expanded', this.state.open);
       this.navEl.classList.remove('open');

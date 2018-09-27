@@ -14,9 +14,9 @@ import Lightbox2 from 'lightbox2';
 import GoogleMap from './modules/GoogleMap';
 
 // Instantiate Objects
-new SignupForm();
+// new SignupForm();
 new Navigation();
-new GoogleMap();
+// new GoogleMap();
 new Flickity( '#carousel', {
   // options, defaults listed
   accessibility: true,
