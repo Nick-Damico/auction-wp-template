@@ -16,13 +16,13 @@ class Navigation {
     if (this.state.open) {
       document.body.style.overflowY = 'hidden';
     } else {
-      document.body.style.overflowY = 'initial';    
+      document.body.style.overflowY = 'initial';
     }
   }
 
   closeNav(evt) {
     const currentWidth = evt.currentTarget.innerWidth;
-    if (currentWidth > 565) {
+    if (currentWidth > 565 || window.scrollY > 399) {
       this.state.open = false;
       this.navEl.setAttribute('aria-expanded', this.state.open);
       this.navEl.classList.remove('open');
