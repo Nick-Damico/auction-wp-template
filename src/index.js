@@ -16,9 +16,9 @@ import GoogleMap from './modules/GoogleMap';
 
 // Instantiate Objects
 new Application();
-// new SignupForm();
+new SignupForm();
 new Navigation();
-// new GoogleMap();
+new GoogleMap();
 new Flickity( '#carousel', {
   // options, defaults listed
   accessibility: true,
