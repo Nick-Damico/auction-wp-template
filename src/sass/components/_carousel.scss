@@ -90,14 +90,14 @@
   .auction-slide__heading {
     color: $white;
     font-size: 1.3rem;
-    text-shadow: $featured-text-shadow;
     font-weight: 300;
     font-style: italic;
+    text-align: center;
+    text-shadow: $featured-text-shadow;
 
     @media (min-width: $small-screen) {
       & {
         font-size: 1.5rem;
-        text-align: left;
       }
     }
 
