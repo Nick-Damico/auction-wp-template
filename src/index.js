@@ -6,7 +6,6 @@ import "lightbox2/dist/css/lightbox.css";
 import './sass/main.scss';
 
 // Import javaScript Modules
-import Application from './modules/Application';
 import Navigation from './modules/Navigation';
 import Flickity from 'flickity';
 import jQuery from 'jquery';
@@ -15,7 +14,6 @@ import Lightbox2 from 'lightbox2';
 import GoogleMap from './modules/GoogleMap';
 
 // Instantiate Objects
-new Application();
 new SignupForm();
 new Navigation();
 new GoogleMap();
