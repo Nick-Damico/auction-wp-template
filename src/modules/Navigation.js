@@ -3,7 +3,7 @@ class Navigation {
     this.navEl = document.querySelector('#navBtn');
     this.navEl.addEventListener('click', this.toggleNav.bind(this));
     window.addEventListener('resize', this.closeNav.bind(this));
-    window.addEventListener('scroll', this.closeNav.bind(this));
+    window.addEventListener('scroll', this.closeNav.bind(this), {passive: true});
     this.state = {
       open: false
     }
